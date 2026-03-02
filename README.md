@@ -1,4 +1,4 @@
-# ⚡ Real-Time Intelligence: Crypto-Market \& Media Analysis
+# Real-Time Intelligence: Crypto-Market \& Media Analysis
 
 ![Status](https://img.shields.io/badge/Status-Educational%20Project-blue?style=for-the-badge)
 ![Spark](https://img.shields.io/badge/Processing-Spark%20Structured%20Streaming-E67E22?style=for-the-badge\&logo=apachespark)
@@ -15,13 +15,9 @@
 
 
 
-## 📖 Project Overview
-
-
+## Project Overview
 
 This project focuses on the **correlation between media sentiment and crypto-market volatility**. In a market driven by "FOMO" and "FUD", traditional indicators are often lagging. This system ingests financial data and global news in real-time to answer the question: *Can media sentiment predict immediate price corrections?*
-
-
 
 ### Key Features
 * **Real-Time Ingestion:** Fetches live Bitcoin prices (CoinGecko) and breaking news (GDELT/NewsAPI).
@@ -37,7 +33,7 @@ This project focuses on the **correlation between media sentiment and crypto-mar
 
 
 
-## 🏗️ Architecture
+## Architecture
 
 
 
@@ -62,7 +58,7 @@ The project is built on a containerized **Lambda Architecture**:
 ---
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language:** Python 3.9 (PySpark, TextBlob, Kafka-Python).
 - **Streaming:** Redpanda (Kafka compatible, C++).
@@ -76,7 +72,7 @@ The project is built on a containerized **Lambda Architecture**:
 ---
 
 
-## 🚀 Getting Started
+## Getting Started
 
 Prerequisites
 - Docker Desktop installed and running.
@@ -118,7 +114,7 @@ docker-compose up -d
 
 
 
-## 💻 Usage
+## Usage
 
 1. Start the Producer
 
@@ -160,7 +156,7 @@ python verify_batch.py
 
 **Output:** Displays a table of historical data retrieved from the Data Lake.
 
-## 📊 Results & Screenshots
+## Results & Screenshots
 
 **Real-Time Correlation**
 Green Line: BTC Price | Yellow Line: Media Sentiment
@@ -174,29 +170,21 @@ Bars indicate news volume per minute.
 
 Querying the Data Lake (MinIO) to verify historical storage.
 
-## 📂 Project Structure
+## Project Structure
 
 ```Bash
 
-
-
 ├── trino/                   # Trino configuration (Catalog)
-
 ├── architecture.png         # Architecture Diagram
-
 ├── docker-compose.yml       # Infrastructure definition (Redpanda, Influx, MinIO, Grafana)
-
 ├── producer.py              # Data ingestion \& Sentiment Analysis (TextBlob)
-
 ├── spark_processor.py       # Spark Structured Streaming logic \& Dual-Write
-
 ├── verify_batch.py          # Script to query MinIO/Delta Lake
-
 └── README.md                # Project documentation
 
 ```
 
-## 👥 Authors
+## Authors
 
 - Wijdane ELBAKHOUCHI
 
@@ -208,7 +196,7 @@ Querying the Data Lake (MinIO) to verify historical storage.
 
 - **Supervisor:** Pr. HADDADI Amine
 
-## 📜 License
+## License
 
 This project is released for educational and academic purposes.
 
